@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kontak Kami</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale-1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/style_kelbengkel.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="icon" href="kelbengkel.png" type="image/png" sizes="16x16 32x32">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body style="background-color: #e6e6e6;">
+  <!--Navbar!-->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#"><img src="gambar/logo/kelbengkel_warning_bootstrap.png" class="img-responsive" width="50rem"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end navbar_font" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Beranda</a>
+      </li>
+      <li class="nav-item dropdown navbar_bg">
+		<a class="nav-link dropdown-toggle" href="#" 
+		id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" 
+		aria-expanded="false">Pelayanan</a>
+		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		  <a href="perawatan.html" class="dropdown-item">Perawatan</a>
+		  <a href="perbaikan.html" class="dropdown-item">Perbaikan</a>
+		  <a href="modifikasi.html" class="dropdown-item">Modifikasi</a>
+		</div>
+	  </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sparepart.html">Spare Part</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="galeri.html">Galeri</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="kontak.html">Kontak</a>
+      </li>
+      <li class="nav-item" style="margin-right: 12px;">
+        <a class="nav-link" href="tentangkami.html">Tentang</a>
+      </li>
+      <!--<li class="nav-item" style="vertical-align: center; margin-right: 12px;"> 
+      	<input type="text" name="search" placeholder="Pencarian...">
+      </li>!-->
+      <li class="nav-item">
+	  	<!--Kolom Pencarian!-->
+      	<button class="openBtn btn btn-outline-warning" onclick="openSearch()" style="margin-right: 12px;"> 
+      	<img src="gambar/icon/png/glyph.png" width="12" height="12" class="openBtn">
+      	</button>
+      </li>
+      <li class="nav-item">
+        <a href="masuk.html" class="btn btn-warning" style="border:none; color: #1a1a1a; 
+        font-family: 'Montserrat',sans-serif; font-weight: Bold;">Masuk</a>
+      </li>
+    </ul>
+  </div>  
+</nav>
+<!--Tutup Navbar!-->
+<!-- gambar header + Breadcrumb -->
+		<div class="label_header">
+			<img src="gambar/header/header3.jpg" class="d-block w-100">
+			<div class="centered">Kontak Kami</div>
+			<!--Breadcrumb Navigator!-->
+				<div class="centered_bread">
+				  <nav aria-label="breadcrumb_edit" style="color: #fff;">
+					<ol class="breadcrumb_edit" style="background-color: none; color: #fff;">
+					  <li class="breadcrumb-item"><a href="index.html" style="color: #fff;">Beranda</a></li>
+					  <li class="breadcrumb-item active" aria-current="page" style="color: #fff;">Kontak Kami</li>
+					</ol>
+				  </nav>
+				</div>
+		</div>
+		
+		<br>
+<!--Tutup gambar header!-->
+		<!--Header Konten!-->
+<br>
+<div class="container-fluid">
+	<div class="container">
+	<!--<p align="left"> 
+	  <img src="gambar/background1.png" width="50%">
+	</p>!-->
+	<!--Kolom Pencarian!-->
+	<div id="myOverlay" class="overlay">
+      		<span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+      		<div class="overlay-content">
+      		  <form action="index.html">
+      		  	<input type="text" name="search" placeholder="Pencarian...">
+      		  	<button type="submit"><b class="fa fa-search">Cari</b></button>
+      		  </form>	
+      		</div>
+      	</div>
+      	<script>
+      		function openSearch(){
+      			document.getElementById("myOverlay").style.display = "block";
+      		}
+      		function closeSearch(){
+      			document.getElementById("myOverlay").style.display = "none";
+      		}
+      	</script>
+    <!--Tutup Kolom pencarian!-->
+    <!--Konten!-->
+    	<div class="row">
+    		<div class="col-xs-12 col-sm-6 col-lg-6" data-aos="fade-up">
+    			<form class="box" id="kritik_form">
+					<div class="form-group">
+						<input alt="center" type="text" name="nama" class="form-control" placeholder="Nama">
+					</div>
+					<div class="form-group">
+						<input alt="center" type="email" name="mail" class="form-control" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<input alt="center" type="text" name="telp" class="form-control" placeholder="Telepon">
+					</div>
+					<div class="form-group">
+						<!--<input alt="center" type="text" name="kritik" class="form-control" placeholder="Kritik & Saran">!-->
+						<textarea alt name="kritik" form="kritik_form" placeholder="Kritik & Saran" 
+						class="form-control"></textarea>
+					</div>
+					<div class="form-group">
+						<input type="button" name="kirim" value="Kirim" class="form-control" style="background-color: #ffad00; color: #1a1a1a; font-family: 'Montserrat', sans-serif;
+							font-weight: Bold;">
+					</div>
+				</form>
+    		</div>
+    		<div class="col-xs-12 col-sm-6 col-lg-6" data-aos="fade-zoom-in" data-aos-delay="600">
+    			<label>Hubungi Kami</label>
+    			<ul type="none">
+    				<li>
+    				<img src="gambar/icon/png/phone.png" width="10%" style="margin-right: 10px;">
+    				<b>(0541)765016</b></li><br>
+    				<li>
+    				<img src="gambar/icon/png/email.png" width="10%" style="margin-right: 10px;">
+    				<b>info@kelbengkel.id</b></li><br>
+    				<li>
+    				<img src="gambar/icon/png/whatsapp.png" width="10%" style="margin-right: 10px;">
+    				<b>(+62)812-3456-7890</b></li>
+    			</ul>
+    			<label>Media Sosial</label>
+    			<div class="row">
+    				<div class="col-xs-4 col-sm-4 col-lg-4">
+    					<a href="https://twitter.com/@kelbengkel.id">
+    						<img src="gambar/icon/png/twitter.png" width="30%">
+    					</a>
+    				</div>
+    				<div class="col-xs-4 col-sm-4 col-lg-4">
+    					<a href="https://instagram.com/kelbengkel.id">
+    						<img src="gambar/icon/png/instagram.png" width="30%">
+    					</a>
+    				</div>
+    				<div class="col-xs-4 col-sm-4 col-lg-4">
+    					<a href="https://facebook.com/kelbengkel.id">
+    						<img src="gambar/icon/png/facebook.png" width="30%">
+    					</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    	<br>
+    	<div class="row">
+    		<div class="col-xs-12 col-sm-12 col-lg-12">
+    			<label>Temukan Kami pada :</label><br>
+    			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d296.535320865945!2d117.13976596445298!3d-0.4634252938365903!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df678ce736c45a5%3A0x35e0efb188be2a54!2sUD.%20Dua%20Jaya%20Mobil!5e0!3m2!1sen!2sid!4v1576462760539!5m2!1sen!2sid" width="1000" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    			<label>Jl. A. Wahab Syahranie No.160, Gn. Kelua, Kec. Samarinda Ulu, Kota Samarinda, Kalimantan Timur 75123</label>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-xs-12 col-sm-4 col-lg-4" data-aos="zoom-in">
+    			<label style="color: #ffc107; margin-left: 70px; font-size: 1.5em;">SCAN ME!</label><br>
+    			<img src="gambar/qr/qr.png" width="75%" style="border-radius: 5px;">
+    		</div>
+    		<div class="col-xs-12 col-sm-4 col-lg-4"><br><br><br><br><br><br>
+    		<label>atau</label>
+    		</div>
+    		<div class="col-xs-12 col-sm-4 col-lg-4" data-aos="fade-zoom-in" data-aos-delay="500">
+    			<br><br><br><br><br><label>Klik link dibawah ini</label><br>
+    			<a href="https://goo.gl/maps/jTzdAV86WwYRMRdH6" style="color: #ffc107;">
+    			<u><b>https://goo.gl/maps/jTzdAV86WwYRMRdH6</b></u></a>
+    		</div>
+    	</div>
+
+    </div>
+</div>
+<br><br>
+<footer class="container-fluid bg-4">
+  <div class="row" style="padding-top: 20px">
+	<div class="col-xs-12 col-sm-6 col-lg-4" style="padding-left: 40px;">
+		<label>Tentang Kami</label><br>
+		<p>
+		kelbengkel adalah template yang di desain<br>
+		untuk para pelaku usaha di dunia usaha otomotif,<br>
+		penjualan spare part, dan pelayanan untuk<br>
+		kendaraan konsumen. 
+		</p>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-lg-4">
+		<p align="center"><label>kelbengkel.id</label></p>
+		<p align="center">
+		<img src="gambar/logo/kelbengkel_warning_bootstrap.png" class="img-responsive" style="width: 35%">
+		</p>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-lg-4" style="padding-left: 40px;">
+		<ul type="none" class="kontak">
+			<label>Kontak</label>
+			<li><a href="info@kelbengkel.id" style="text-decoration: none; color: #fde400;">
+			<img src="gambar/icon/png/email.png" width="13%" class="spacing_icon_bawah">
+			<span class="spacing_icon_kiri">info@kelbengkel.id</span>
+			</a></li>
+			<li><img src="gambar/icon/png/phone.png" width="13%" class="spacing_icon_bawah">
+			<span class="spacing_icon_kiri"><a href="(+62)81234567890" style="text-decoration: none; 
+			color: #fde400;">
+			(+62)812-3456-7890</a></span></li>
+			<li><a href="https://instagram.com/kelbengkel.id" style="text-decoration: none; color: #fde400;">
+			<img src="gambar/icon/png/instagram.png" width="13%" class="spacing_icon_bawah">
+			<span class="spacing_icon_kiri">kelbengkel.id</span>
+			</a></li>
+		</ul>
+	</div>
+  </div>
+  <div class="row" style="background-color: #1a1a1a">
+  	<div class="col-12"><p align="center" style="padding-top: 15px;">
+  	  <span style="font-family: 'Montserrat',sans-serif; font-weight: Bold;">
+  	  &copy 2019 | Artista</p>
+  	  </span>
+  	</div>
+  </div>
+</footer>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+    	AOS.init();
+  	</script>
+</body>
+</html>

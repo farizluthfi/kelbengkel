@@ -1,0 +1,233 @@
+body{
+    background-color: #e6e6e6;
+}
+html{
+    font-family: "Montserrat", sans-serif;
+}
+.label_header{
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Montserrat", sans-serif;
+    font-weight: Bold;
+    font-size: 500%;
+}
+.centered_bread{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-family: "Montserrat", sans-serif;
+    font-weight: Bold;
+    font-size: 120%;
+}
+.breadcrumb_edit {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  background-color: none;
+  border-radius: 0.25rem;
+}
+
+
+.navbar{
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.navbar-nav li a:hover{
+    color:#ffc107 !important;
+}
+.bg-4{
+    background-color: #343a40;
+    color: #fde400;
+    margin-left: 0;
+    margin-right: 0;
+}
+label{
+    font-family: "Montserrat", sans-serif;
+    font-weight: Bold;
+    font-size: 20px;
+}
+.spacing_icon_kiri{
+    padding-left: 15px;
+}
+.spacing_icon_bawah{
+    padding-bottom: 10px; 
+    vertical-align: center;
+}
+.tombol_pintas{
+    color: #ffffff;
+    text-decoration: none;
+}
+div.galeri{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+div.galeri:hover{
+    border: 1px solid #777;
+}
+div.galeri img{
+    width: 100%;
+    height: auto;
+}
+.responsive{
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+@media only screen and (max-width: 700px){
+    .responsive{
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+@media only screen and (max-width: 500px){
+    .responsive{
+        width: 100%;
+    }
+}
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  border-radius: 3px;
+  border:none;
+  margin-top: 7px;
+}
+input[type=text]:focus {
+  width: 100%;
+  border-radius: 3px;
+}*/
+
+/*Efek background hitam*/
+.overlay{
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+/*Konten*/
+.overlay-content{
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+/*Tombol penutup*/
+.overlay .closebtn{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+}
+.overlay .closebtn:hover{
+    color: #ffc107;
+}
+
+/*Editing style Field pencarian*/
+.overlay input[type=text]{
+    padding:15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+}
+.overlay input[type=text]:hover{
+    background: #f1f1f1;
+}
+
+/*Editing style tombol submit*/
+.overlay button{
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.overlay button:hover{
+    background: #ffc107;
+}
+*{
+    box-sizing: border-box;
+}
+
+.spacing_card{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.bg_highlight{
+    width: 100%;
+    height: auto;
+    background-color: #4d4d4d;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.margin_part{
+    margin-bottom: 10px;
+}
+footer{
+    margin-left: auto;
+    margin-right: auto;
+}
+.kontak li a:hover{
+    color:#ffc107 !important;
+}
+.navbar_bg li a:hover{
+    background-color: #e6e6e6;
+}
+.button:hover{
+    background-color: #ffc107 !important;
+    border: none;
+    color: #213f19 !important;
+}
+.list_kontak{
+    margin-right: 10px;
+}
+.radius_galeri{
+    border-radius: 3px;
+}
+.spacing_galeri{
+    margin-bottom: 1.8em;
+}
+.hover_card:hover{
+    transform:  scale(1.1) !important;
+}
+.hover_mod:hover{
+    transform:  scale(1.1) !important;
+}

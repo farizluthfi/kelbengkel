@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Beranda | kelbengkel</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale-1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/style_kelbengkel.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+	<link rel="icon" href="kelbengkel.png" type="image/png" sizes="16x16 32x32">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body style="background-color: #e6e6e6;">
+  <!--Navbar!-->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#"><img src="gambar/logo/kelbengkel_warning_bootstrap.png" class="img-responsive" width="50rem"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end navbar_font" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Beranda</a>
+      </li>
+      <li class="nav-item dropdown">
+		<a class="nav-link dropdown-toggle" href="#" 
+		id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" 
+		aria-expanded="false">Pelayanan</a>
+		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		  <a href="perawatan.html" class="dropdown-item">Perawatan</a>
+		  <a href="perbaikan.html" class="dropdown-item">Perbaikan</a>
+		  <a href="modifikasi.html" class="dropdown-item">Modifikasi</a>
+		</div>
+	  </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sparepart.html">Spare Part</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="galeri.html">Galeri</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="kontak.html">Kontak</a>
+      </li>
+      <li class="nav-item" style="margin-right: 12px;">
+        <a class="nav-link" href="tentangkami.html">Tentang</a>
+      </li>
+      <!--<li class="nav-item" style="vertical-align: center; margin-right: 12px;"> 
+      	<input type="text" name="search" placeholder="Pencarian...">
+      </li>!-->
+      <li class="nav-item">
+	  	<!--Kolom Pencarian!-->
+      	<button class="openBtn btn btn-outline-warning" onclick="openSearch()" style="margin-right: 12px;"> 
+      	<img src="gambar/icon/png/glyph.png" width="12" height="12" class="openBtn">
+      	</button>
+      </li>
+      <li class="nav-item">
+        <a href="masuk.html" class="btn btn-warning" style="border:none; color: #1a1a1a; 
+        font-family: 'Montserrat',sans-serif; font-weight: Bold;">Masuk</a>
+      </li>
+    </ul>
+  </div>  
+</nav>
+<!--Tutup Navbar!-->
+<!--Slider!-->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+  </ol>
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+	<div class="carousel-inner">
+	  <div class="carousel-item active">
+		<img src="gambar/slider/slider1.jpg" class="d-block w-100">
+	  </div>
+	  <div class="carousel-item">
+		<img src="gambar/slider/slider2.jpg" class="d-block w-100">
+	  </div>
+	  <div class="carousel-item">
+		<img src="gambar/slider/slider3.jpg" class="d-block w-100">
+	  </div>
+	  <div class="carousel-item">
+		<img src="gambar/slider/slider4.jpg" class="d-block w-100">
+	  </div>
+	  <div class="carousel-item">
+		<img src="gambar/slider/slider5.jpg" class="d-block w-100">
+	  </div>
+	  <div class="carousel-item">
+		<img src="gambar/slider/slider6.jpg" class="d-block w-100">
+	  </div>
+	</div>
+	<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	  <span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	  <span class="sr-only">Next</span>
+	</a>
+  </div>	
+</div>
+<!--Tutup Slider!-->
+<!--Header Konten!-->
+<br>
+<div class="container">
+	<!--<p align="left"> 
+	  <img src="gambar/background1.png" width="50%">
+	</p>!-->
+	<!--Kolom Pencarian!-->
+	<div id="myOverlay" class="overlay">
+      		<span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+      		<div class="overlay-content">
+      		  <form action="index.html">
+      		  	<input type="text" name="search" placeholder="Pencarian...">
+      		  	<button type="submit"><b class="fa fa-search">Cari</b></button>
+      		  </form>	
+      		</div>
+      	</div>
+      	<script>
+      		function openSearch(){
+      			document.getElementById("myOverlay").style.display = "block";
+      		}
+      		function closeSearch(){
+      			document.getElementById("myOverlay").style.display = "none";
+      		}
+      	</script>
+    <!--Tutup Kolom pencarian!-->
+    <!--Header Beranda!-->
+	<div class="row">
+	  <div class="col-xs-12 col-sm-12 col-lg-12 text-center">
+	  	<img src="gambar/logo/kelbengkel_warning_bootstrap.png" width="130" height="130" data-aos="fade-up"
+	  	data-aos-anchor-placement="center-center">
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-xs-12 col-sm-12 col-lg-12 text-center">
+	  	<span style="font-family: 'Roboto',sans-serif; font-weight: Bold; color: #ffc107; font-size: 3em; padding-top: 10px;" data-aos="zoom-in">
+	  	Mau Cari Apa?</span>
+	  </div>
+	</div>
+	<br>
+	<div class="row offset-4 ">
+		<div class="col-xs-12 col-sm-3 col-lg-2">
+			<button class="btn btn-secondary" data-aos="fade-zoom-in">
+			<a href="perawatan.html" class="tombol_pintas" style="color: white; text-decoration: none;">Perawatan</a>
+			</button>
+		</div>
+		<div class="col-xs-12 col-sm-3 col-lg-2">
+			<button class="btn btn-secondary" data-aos="fade-zoom-in" data-aos-delay="300">
+			<a href="perbaikan.html" class="tombol_pintas" style="color: white; text-decoration: none;">Perbaikan</a>
+			</button>
+		</div>
+		<div class="col-xs-12 col-sm-3 col-lg-2" data-aos="fade-zoom-in" data-aos-delay="600">
+			<button class="btn btn-secondary">
+			<a href="modifikasi.html" class="tombol_pintas" style="color: white; text-decoration: none;">
+			Modifikasi</a>
+			</button>
+		</div>
+	</div>
+	<br>
+	<div class="row offset-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+					<div class="col-xs-6 col-md-6 col-lg-4"> 	
+						<input class="form-control" type="search" placeholder="Pencarian" aria-label="Search">
+					</div>
+					<div class="col-xs-6 col-md-6 col-lg-4">
+						<button class="btn btn-warning" type="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cari&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+					</div>
+				</div>
+</div>
+<br>
+<!--Tutup Header Konten!-->
+<!-- highlights -->
+			<!--<div class="w-100 p-3" style="background-color: #4d4d4d;"!-->
+			  <div class="container-fluid" style="background-color: #4d4d4d;">
+				<div class="container" style="background-color: #4d4d4d; padding-bottom: 30px;">
+					<div data-aos="zoom-in"><h2 style="color: #ffffff; font-family: 'Roboto',sans-serif; font-weight: Medium; 
+					padding-top: 20px;">
+					Highlights</h2></div>
+					<br>
+					<div class="row">
+						<div class="col-xs-12 col-md-4">
+							<!-- card -->
+								<div class="card hover_card" style="width: 100%; background-color: #4d4d4d; border: 0;" 
+								data-aos="fade-down">
+									<img class="card-img-top" src="gambar/perawatan.jpg" height="250">
+									<div class="card-body">
+										<h5 class="card-title" style="color: #e6e6e6; font-weight: Bold;">
+										Perawatan</h5>
+										<p class="card-text" style="color: #e6e6e6;">Jasa untuk melakukan perawatan
+										pada kendaraan anda, seperti penggantian oli, dan lain-lain</p>
+									</div>
+								</div>	
+						</div>
+						<div class="col-xs-12 col-md-4">
+							<!-- card -->
+							<div class="card hover_card" style="width: 100%;  background-color: #4d4d4d; border: 0;"
+							data-aos="fade-down" data-aos-delay="400">
+								<img class="card-img-top" src="gambar/perbaikan.jpg" height="250">
+								<div class="card-body">
+									<h5 class="card-title" style="color: #e6e6e6; font-weight: Bold;">
+									Perbaikan</h5>
+									<p class="card-text" style="color: #e6e6e6;">Ingin memperbaiki kendaraan anda?
+									Kuy, bawa aja ke kelbengkel disini ada juga jasa Perbaikan.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-4">
+							<!-- card -->
+								<div class="card hover_card" style="width: 100%;  background-color: #4d4d4d; 
+								border: 0;"
+								data-aos="fade-down" data-aos-delay="800">
+									<img class="card-img-top" src="gambar/modifikasi.jpg" height="250">
+									<div class="card-body">
+										<h5 class="card-title" style="color: #e6e6e6; font-weight: Bold;">
+										Modifikasi</h5>
+										<p class="card-text" style="color: #e6e6e6;">Modifikasi kendaraan anda disini,
+										kelbengkel menerima jasa untuk kustomisasi kendaraan anda dengan tenaga ahli.</p>
+									</div>
+							  </div>
+						</div>						
+					</div>
+				</div>
+			  </div>
+			<!-- akhir konten highlights -->
+			<!-- Sparepart -->
+			<div style="background-color: #e6e6e6;">
+				<div class="container">
+					<div data-aos="zoom-in"><h2 style="color: #282828; font-family: 'Roboto', sans-serif; font-weight: Medium;
+					padding-top: 20px;">
+					Sparepart</h2></div>
+					<br>
+					<div class="row">
+					<!-- card Pertama baris pertama -->
+						<div class="col-xs-12 col-md-6 col-lg-3">
+							<a href="#" style="text-decoration: none; color: #4d4d4d" data-toggle="modal" data-target="#modal_tengah1">
+								<div class="card hover_card" style="width: 100%;" data-aos="fade-up">
+									<img class="card-img-top" src="gambar/sparepart/kunci.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h5 class="card-title title_card_font">Kunci Pas</h5>
+										<p class="card-text konten_card_font">
+										Kunci pas Fullset
+										untuk keperluan anda
+										sebagai perkakas darurat
+										ketika anda berada jauh
+										dari bengkel.</p>
+										<p class="card-text harga_card_font">
+										<button class="btn btn-dark button"><b>Rp. 1.700.000,-</b></button></p>
+									</div>
+								</div>
+							</a>
+							<div class="modal fade" id="modal_tengah1">
+								<div class="modal-dialog modal-md">
+									<div class="modal-content">
+
+										<!-- Ini adalah Bagian Header Modal -->
+										<div class="modal-header">
+											<h4 class="modal-title title_inside_card">Kunci Pas</h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+
+										<!-- Ini adalah Bagian Body Modal -->
+										<div class="modal-body">
+											<img class="card-img-top margin_part" src="gambar/sparepart/kunci.jpg" alt="Card image cap">
+											<p>
+												Kunci pas Full Set untuk keperluan anda dalam hal perkakas dan perlengkapan anda dirumah dan dapat dibawa ketika anda dalam perjalanan sebagai perlengkapan dijalan ketika ada kendala dalam perjalanan anda.
+												<br>Satu Fullset Kunci Pas ini dapat dibeli dengan harga yang tertera dibawah ini
+											</p>
+											<br>
+											<p><button class="btn btn-dark button"><b>Rp. 1.700.000,-</b></button></p>
+										</div>
+
+										<!-- Ini adalah Bagian Footer Modal -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-light" data-dismiss="modal">Tutup</button>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Akhir card dan modal pertama baris pertama -->
+
+					<!-- card -->						
+						<div class="col-xs-12 col-md-6 col-lg-3">
+							<a href="#" style="text-decoration: none; color: #4d4d4d" data-toggle="modal" data-target="#modal_tengah2">
+								<div class="card hover_card" style="width: 100%;" data-aos="fade-up">
+									<img class="card-img-top" src="gambar/sparepart/ban-1.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h5 class="card-title title_card_font">Velg SRT</h5>
+										<p class="card-text konten_card_font">
+										Velg SRT cocok dipasang pada 
+										mobil sport, ban ini cocok dipakai 
+										di medan jalan yang mulus dan berkelok.
+										</p>
+										<p class="card-text harga_card_font">
+										<button class="btn btn-dark button"><b>Rp. 13.500.000,-</b></button></p>
+									</div>
+								</div>
+							</a>
+							<div class="modal fade" id="modal_tengah2">
+								<div class="modal-dialog modal-md">
+									<div class="modal-content">
+
+										<!-- Ini adalah Bagian Header Modal -->
+										<div class="modal-header">
+											<h4 class="modal-title title_inside_card">Velg SRT (Fullset)</h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+
+										<!-- Ini adalah Bagian Body Modal -->
+										<div class="modal-body">
+											<img class="card-img-top margin_part" src="gambar/sparepart/ban-1.jpg" alt="Card image cap">
+											<p>
+											Anda hobi koleksi Velg Sportcar? Belum lengkap jika anda belum memiliki velg ini, Velg SRT, memiliki desain yang minimalis namun tetap elegan dengan warna hitam chrome, velg ini sangat cocok digunakan pada medan yang berkelok dan mulus, dengan ditambah ban yang mumpuni velg ini akan memanjakan anda dalam berkendara.<br> Kuy dibeli, harga tertera dibawah ini
+											</p><br>
+											<p><button class="btn btn-dark button"><b>Rp. 13.500.000,-</b></button></p>
+										</div>
+
+										<!-- Ini adalah Bagian Footer Modal -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-light" data-dismiss="modal">Tutup</button>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Akhir card dan modal  -->
+
+					<!-- card -->						
+						<div class="col-xs-12 col-md-6 col-lg-3">
+							<a href="#" style="text-decoration: none; color: #4d4d4d" data-toggle="modal" data-target="#modal_tengah3">
+								<div class="card hover_card" style="width: 100%;" data-aos="fade-up">
+									<img class="card-img-top" src="gambar/sparepart/aksesoris-6.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h5 class="card-title title_card_font">Setir Mobil</h5>
+										<p class="card-text konten_card_font">
+										Setir Mobil ini memiliki bahan yang 
+										nyaman ketika digenggam & anda dapat 
+										berkendara lebih nyaman.</p>
+										<p class="card-text harga_card_font">
+										<button class="btn btn-dark button"><b>Rp. 300.000,-</b></button></p>
+									</div>
+								</div>
+							</a>
+							<div class="modal fade" id="modal_tengah3">
+								<div class="modal-dialog modal-md">
+									<div class="modal-content">
+
+										<!-- Ini adalah Bagian Header Modal -->
+										<div class="modal-header">
+											<h4 class="modal-title title_inside_card">Setir Mobil</h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+
+										<!-- Ini adalah Bagian Body Modal -->
+										<div class="modal-body">
+											<img class="card-img-top margin_part" src="gambar/sparepart/aksesoris-6.jpg" alt="Card image cap">
+											<p>Setir Mobil ini memiliki bahan yang lebih nyaman ketika digenggam tangan anda, sehingga dapat membuat anda berkendara lebih nyaman. </p><br>
+											<p><button class="btn btn-dark button"><b>Rp. 300.000,-</b></button></p>
+										</div>
+
+										<!-- Ini adalah Bagian Footer Modal -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-light" data-dismiss="modal">Tutup</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Akhir card dan modal  -->
+
+					<!-- card -->						
+						<div class="col-xs-6 col-md-6 col-lg-3">
+							<a href="#" style="text-decoration: none; color: #4d4d4d" data-toggle="modal" data-target="#modal_tengah4">
+								<div class="card hover_card" style="width: 100%;" data-aos="fade-up">
+									<img class="card-img-top" src="gambar/sparepart/mesin-8.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h5 class="card-title title_card_font">Karburator</h5>
+										<p class="card-text konten_card_font">
+										Karburator satu set, untuk anda penggemar modifikasi
+										karburator ini cocok untuk anda.</p>
+										<p class="card-text harga_card_font">
+										<button class="btn btn-dark button"><b>Rp. 8.500.000,-</b></button></p>
+									</div>
+								</div>
+							</a>
+							<div class="modal fade" id="modal_tengah4">
+								<div class="modal-dialog modal-md">
+									<div class="modal-content">
+
+										<!-- Ini adalah Bagian Header Modal -->
+										<div class="modal-header">
+											<h4 class="modal-title">Karburator</h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+
+										<!-- Ini adalah Bagian Body Modal -->
+										<div class="modal-body">
+											<img class="card-img-top margin_part" src="gambar/sparepart/mesin-8.jpg" alt="Card image cap">
+											<p>Karburator untuk anda penggemar modifikasi sangat cocok untuk anda
+											karburator ini kita sediakan untuk anda yang gemar mengkustom spare part kendaraan anda untuk digunakan offroad dan lain-lain.</p>
+											<br>
+											<p><button class="btn btn-dark button"><b>Rp. 8.500.000,-</b></button></p>
+										</div>
+
+										<!-- Ini adalah Bagian Footer Modal -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-light" data-dismiss="modal">Tutup</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Akhir card dan modal  -->
+
+					</div>
+					<br><br>
+					<div class="row">
+						<div class="offset-5 col-xs-3 col-sm-4 col-lg-6" data-aos="fade-zoom-out">
+							<button class="btn btn-warning shadow">
+								<a href="sparepart.html" style="color: #1a1a1a; text-decoration: none; font-family: 'Montserrat SemiBold', sans-serif; ">Selengkapnya <img src="gambar/icon/png/panah_kanan_90black.png" width="20px" height="20px"></a>
+							</button>
+						</div>
+					</div>		
+				</div>
+			</div>
+			<br>
+			<!-- akhir konten sparepart -->
+			<!-- testimoni -->
+			<div class="container-fluid" style="background-color: #fddc00;">
+				<div class="container" style="padding-bottom: 30px;">
+					<div data-aos="zoom-in"><h2 style="color: #282828; font-family: 'Roboto',sans-serif; 
+					font-weight: Medium; padding-top: 20px;">Testimoni</h2></div>
+					<br>
+					<!--Slider!-->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">  
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+	<div class="carousel-inner">
+	  <!--Slide Pertama!-->
+	  <div class="carousel-item active">
+		<div class="row">
+		  <div class="col-xs-12 col-sm-6 col-lg-6">
+			<img src="gambar/testimoni/testimoni_1.png" width="40%" class="float-left">
+			<p class="card-text" style="font-family: 'Montserrat', sans-serif; 
+			margin-top: 30px; font-weight: Regular;">Mantap dah bengkel ini<br>
+			gak ada obatnya,<br>
+			banyak promo<br>
+			<b>"Lionel Messi"</b></p>
+		  </div>
+		  <div class="col-xs-12 col-sm-6 col-lg-6">
+			<img src="gambar/testimoni/testimoni_2.png" width="40%" class="float-left">
+			<p class="card-text" style="font-family: 'Montserrat', sans-serif; 
+			margin-top: 30px; font-weight: Regular;">Bengkel terkenal diseluruh Indonesia<br>
+			buruan dah bengkel sini<br>
+			banyak promo<br>
+			mantul bingit dah<br>
+			<b>"Frankie De Jong"</b></p>
+		  </div>
+		</div>
+	  </div>
+	  <!--Slide Kedua!-->
+	  <div class="carousel-item">
+		<div class="row">
+		  <div class="col-xs-12 col-sm-6 col-lg-6">
+			<img src="gambar/testimoni/testimoni_3.png" width="60%" class="float-left">
+			<p class="card-text" style="font-family: 'Montserrat', sans-serif; 
+			margin-top: 30px; font-weight: Regular;">Bujur ujar urang sebelah nih, kelbengkel mantap bujur, bari bubuhannya manday
+			<br><b>"John Cena"</b></p>
+		  </div>
+		  <div class="col-xs-12 col-sm-6 col-lg-6">
+			<img src="gambar/testimoni/testimoni_4.png" width="40%" class="float-left">
+			<p class="card-text" style="font-family: 'Montserrat', sans-serif; 
+			margin-top: 30px; font-weight: Regular;">Nggak ada lawan, kelbengkel pancen oye
+			<br><b>"Will Smith"</b></p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	  <span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	  <span class="sr-only">Next</span>
+	</a>
+  </div>	
+</div>
+<!--Tutup Slider!-->
+	
+				</div>	
+			</div>
+			<!-- akhir konten testimoni -->
+<!--Footer!-->
+<footer class="container-fluid bg-4">
+  <div class="row" style="padding-top: 20px">
+	<div class="col-xs-12 col-sm-6 col-lg-4" style="padding-left: 40px;">
+		<label>Tentang Kami</label><br>
+		<p>
+		kelbengkel adalah template yang di desain<br>
+		untuk para pelaku usaha di dunia usaha otomotif,<br>
+		penjualan spare part, dan pelayanan untuk<br>
+		kendaraan konsumen. 
+		</p>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-lg-4">
+		<p align="center"><label>kelbengkel.id</label></p>
+		<p align="center">
+		<img src="gambar/logo/kelbengkel_warning_bootstrap.png" class="img-responsive" style="width: 35%">
+		</p>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-lg-4" style="padding-left: 40px;">
+		<ul type="none" class="kontak">
+			<label>Kontak</label>
+			<li><a href="info@kelbengkel.id" style="text-decoration: none; color: #fde400;">
+			<img src="gambar/icon/png/email.png" width="13%" class="spacing_icon_bawah">
+			<span class="spacing_icon_kiri">info@kelbengkel.id</span>
+			</a></li>
+			<li><img src="gambar/icon/png/phone.png" width="13%" class="spacing_icon_bawah">
+			<span class="spacing_icon_kiri"><a href="(+62)81234567890" style="text-decoration: none; 
+			color: #fde400;">
+			(+62)812-3456-7890</a></span></li>
+			<li><a href="https://instagram.com/kelbengkel.id" style="text-decoration: none; color: #fde400;">
+			<img src="gambar/icon/png/instagram.png" width="13%" class="spacing_icon_bawah">
+			<span class="spacing_icon_kiri">kelbengkel.id</span>
+			</a></li>
+		</ul>
+	</div>
+  </div>
+  <div class="row" style="background-color: #1a1a1a">
+  	<div class="col-12"><p align="center" style="padding-top: 15px;">
+  	  <span style="font-family: 'Montserrat',sans-serif; font-weight: Bold;">
+  	  &copy 2019 | Artista</p>
+  	  </span>
+  	</div>
+  </div>
+</footer>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+    	AOS.init();
+  	</script>
+</body>
+</html>

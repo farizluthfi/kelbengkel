@@ -1,0 +1,38 @@
+.navbar_font{
+    font-family: 'Ubuntu', sans-serif;
+}
+.body_font{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.footer_font{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.title_card_font{
+	font-family: "Montserrat", sans-serif;
+	font-weight: Regular;
+	font-size: 30px;
+}
+.konten_card_font{
+	font-family: "Montserrat", sans-serif;
+	font-weight: Regular;
+	font-size: 14px;
+}
+.harga_card_font{
+	font-family: "Montserrat", sans-serif;
+	font-weight: Bold;
+	font-size: 18px;
+	color: white;
+}
+.title_inside_card{
+	font-family: "Montserrat SemiBold", sans-serif;
+}
+.label_kreator{
+	font-family: "Roboto", sans-serif;
+	font-weight: Medium;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
